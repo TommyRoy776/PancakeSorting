@@ -15,3 +15,13 @@ top is now in the kth position and the burned side goes from top to bottom and v
 (+ indicates burned bottom, - a burned top):
 +1 -3 -2 [flip 2] => +3 -1 -2 [flip 1] => -3 -1 -2 [flip 3] => +2 +1 +3 [flip 1] => -2 +1 +3 [flip 2]
 => -1 +2 +3 [flip 1] => +1 +2 +3
+
+Input: A sequence of numbers separated by spaces, with the first number being the number, N, of
+pancakes in the data set. The remainder of the data set is the numbers 1 through N in some order, each
+with a plus or minus sign, giving the initial pancake stack. The numbers indicate the relative sizes of
+the pancakes and the signs indicate whether the burned side is up (-) or down (+). M can be an arbitrary
+positive integer.
+
+Output: You should generate one line of output with the following values: the number of flips (K,
+where K≥0) required to sort the pancakes and a sequence of K numbers, each of which gives the
+number of pancakes to flip on the corresponding sorting step. There may be several correct solutions
